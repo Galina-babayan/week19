@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="row">
+        <h1 class="row__title">арифметические действия:</h1>
+
+        <div class="row__count">
+          <input
+            placeholder="Первое число"
+            class="row__reg"
+            id="input1"
+            type="text"
+          />
+          <input
+            placeholder="Второе число"
+            class="row__reg"
+            id="input2"
+            type="text"
+          />
+          <div class="row__count">
+            <div onclick="getSum()" class="row__button row__button2">+</div>
+            <div onclick="getSub()" class="row__button row__button2">-</div>
+            <div onclick="getMult()" class="row__button row__button2">*</div>
+            <div onclick="getQuot()" class="row__button row__button2">/</div>
+            <div onclick="Clear()" class="row__button row__button2 w2">
+              Сброс
+            </div>
+            <div id="result" class="row__button row__button2 w2"></div>
+          </div>
+        </div>
+        <h1 class="row__title">Слайдер</h1>
+        <div class="row__images">
+          <div onclick="PreviousImg()" class="row__button">Назад</div>
+          <div class="row__image">
+            <img class="image" src="./images/5.JPG" alt="" />
+          </div>
+          <div onclick="NextImg()" class="row__button">Вперед</div>
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
